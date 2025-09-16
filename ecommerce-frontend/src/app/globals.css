@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+/* Force light theme - no dark mode */
+body {
+  background: #ffffff;
+  color: #000000;
+}
+
+/* Let Tailwind CSS handle all colors - remove global overrides that interfere */
+/* Only add specific fixes where absolutely necessary */
